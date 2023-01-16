@@ -1,4 +1,4 @@
-
+MktoForms2.whenReady(function (){
   // Get HTML head element
   const head = document.getElementsByTagName("HEAD")[0];
   
@@ -27,7 +27,7 @@
     console.log("Notice: No dynamic global script tag added to Marketo form");
   }
 
-  MktoForms2.whenReady(function (){
+  
     const marketoForm = document.querySelector('form.mktoForm');
     const marketoRow = document.querySelectorAll('.mktoFormRow');
     console.log(marketoRow[0].childNodes.length );
