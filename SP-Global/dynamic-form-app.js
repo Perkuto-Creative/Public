@@ -30,7 +30,11 @@ MktoForms2.whenReady(function (){
   
     const marketoForm = document.querySelector('form.mktoForm');
     const marketoRow = document.querySelectorAll('.mktoFormRow');
-    console.log(marketoRow[0].childNodes.length );
+    if(marketoForm.offsetWidth < 400 || window.innerWidth < 480) {
+      marketoRow.forEach(row => {
+        row.style.cssText='grid-template-columns: 1fr !important;';
+      })
+    }
     window.onresize = () => {
       if(marketoForm.offsetWidth < 400) {
         marketoRow.forEach(row => {
