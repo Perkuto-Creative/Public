@@ -1,5 +1,5 @@
 var userOptions = {
-  basePath: "/rs/267-JUP-120/images/" /* /rs/123-ABC-456images/ if in Marketo Design Studio */
+  basePath: "https://staging.eptura.com/rs/267-JUP-120/images/" /* /rs/123-ABC-456images/ if in Marketo Design Studio */
 };
 var lists = [
   {
